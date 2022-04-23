@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Nitro Gym</title>
+  </head>
+  <body>
+    <body style="background-color:white;">
+        <nav class="navbar navbar-expand-lg navbar-info bg-info active">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./home.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+      
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Facilities
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Fittness Traniner</a></li>
+                    <li><a class="dropdown-item" href="#">Fittness Club</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Fittness Acadmy</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact Us
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="./contact us.html">Membership</a></li>
+                    <li><a class="dropdown-item" href="#">call us</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">SMS</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Location
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Patna</a></li>
+                    <li><a class="dropdown-item" href="#">Nawada</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Bihar Sharif</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Services</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-primary" type="submit">Search</button>
+              </form>
+              <div class="mx-2">
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Login to Nitro Fittness</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignUpModalLabel">Sign Up to Nitro Fittness</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputname" class="form-label">Enter Name</label>
+                    <input type="name" class="form-control" id="exampleInputname">
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="http://www.leisureopportunities.com/images/471664_775385.jpg" class="d-block " alt="..." width="1400" height="500">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>WELCOME TO OUR FITTNESS CENTER</h2>
+                <p>Work Harder,Get Stronger</p>
+                <button class="btn btn-danger">PATNA</button>
+                <button class="btn btn-primary">BIHAR</button>
+                <button class="btn btn-success">NAWADA</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://previews.123rf.com/images/nd3000/nd30001711/nd3000171103607/90433034-sch%C3%B6ne-frauen-die-in-der-turnhalle-arbeiten.jpg" class="d-block " alt="..." width="1400" height="500">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>WELCOME TO OUR FITTNESS CENTER</h2>
+                <p>Work Harder,Get Stronger</p>
+                <button class="btn btn-danger">PATNA</button>
+                <button class="btn btn-primary">BIHAR</button>
+                <button class="btn btn-success">NAWADA</button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://ak.picdn.net/shutterstock/videos/26303060/thumb/1.jpg" class="d-block " alt="..." width="1400" height="500">
+              <div class="carousel-caption d-none d-md-block">
+                <h2>WELCOME TO OUR FITTNESS CENTER</h2>
+                <p>Work Harder,Get Stronger</p>
+                <button class="btn btn-danger">PATNA</button>
+                <button class="btn btn-primary">BIHAR</button>
+                <button class="btn btn-success">NAWADA</button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <div class="read">
+          <h2 style="text-align: center; margin-top: 40px; ">NITRO FITTNESS CENTER</h2>
+          <h5 style="text-align:center;">Nitrro is not just a gym, it's a way of life. Widely recognized as one of India's
+            premium fitness destination.</h5>
+          <h5 style="text-align: center;">Here you can find better facilities in low investment</h5>
+        </div>
+      
+        <div class="container my-4">
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-danger"> NITRO FITTNESS</strong>
+                  <h3 class="mb-0">Modern Eqipments</h3>
+                  <div class="mb-1 text-muted">April 20</div>
+                  <p class="card-text mb-auto">The same variety of equipment used by the likes of the American Military, and
+                    the Manchester United &amp; German football team.
+      
+                  </p>
+                  <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQazJ2Xe3o94Ci_Id_oEIOoXlplSlrFgtvMwA&amp;usqp=CAU" alt="" width="250" height="250">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-success"> NITRO FITTNESS</strong>
+                  <h3 class="mb-0">Certified Trainers</h3>
+                  <div class="mb-1 text-muted">April 30</div>
+                  <p class="mb-auto">Provide personalized experience and create a strong sense of belongingness to our guests.
+                  </p>
+                  <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxqN0_RQaXbmy2HExg4cpZP2rcZ9y2C1gM1g&amp;usqp=CAU" alt="" width="250" height="250">
+      
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-primary"> NITRO FITTNESS</strong>
+                  <h3 class="mb-0">Premium Architecture</h3>
+                  <div class="mb-1 text-muted">April 20</div>
+                  <p class="card-text mb-auto">Standards refined to live upto brand’s promise of delivering ultimate luxurious fitness experience.
+      
+                  </p>
+                  <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmuMwnA9ezO0UGBHotIFX_wnxardQPSI3h3w&amp;usqp=CAU" alt="" width="250" height="300">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                  <strong class="d-inline-block mb-2 text-info"> NITRO FITTNESS</strong>
+                  <h3 class="mb-0">Awards &amp; Achievements</h3>
+                  <div class="mb-1 text-muted">April 30</div>
+                  <p class="mb-auto">Endorsed by top celebrities and international athletes alike, Nitrro has won many awards for a best fitness center in India.
+                  </p>
+                  <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <img src="data:image/jpeg;base64,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" alt="" width="250" height="300">
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+      
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+          </script>
+        <p style="border: 2px solid pink; text-align: center; background-color: blanchedalmond;padding:20px">© Copyright Nitrro 2022. All
+          Right Reserved. Powered by Ignitize Consulting Services Pvt. Ltd.</p>
+      
+      
+      </body>
+   
+</html>
